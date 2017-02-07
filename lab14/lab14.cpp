@@ -19,10 +19,9 @@ int main()
     
     int quarters = userCents / 25;
     int dimes = (userCents % 25) / 10;
-    int nickels = ((userCents % 25) % 10) / 5;
-    int X = nickels;
-    int pennies = X % 5;
+    int nickels = (userCents % 10) / 20;
+    int pennies = (userCents % 20) / 100;
     
-    cout<<"That is "<<quarters<<" quarters, "<<dimes<<" dimes, "<<nickels<<" nickels, and "<<pennies<<" pennies.";
-
+    cout<<"That is "<<quarters<<" quarters, "<<dimes<<" dimes, "<<nickels<<" nickels, and "<<pennies<<" pennies."<<endl;
+    cout<<"After the 10.9% fee, cash received will be: "<<fee;
 }
