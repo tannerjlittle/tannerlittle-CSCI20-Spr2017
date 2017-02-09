@@ -11,14 +11,14 @@ int main()
 
     string noun1 = "Stomach";
     string exclamation = "Wazzoo";
-    string verbIng = "chafing";
-    string nameRandom = "Xavier";
+    string verbIng = "chafing";          //Verb ending in 'ing'
+    string nameRandom = "Xavier";        //Person's name. Any name
     string adjective1 = "moist";
     string noun4 = "tooth";
-    string personRm = "Tanner";
+    string personRm = "Tanner";          //Person in the room
     int number1 = 47;
-    double number2 = 4.5;
-    string nounPl1 = "monkeys";
+    double number2 = 4.5;                //No reason for "double" other than I wanted a floating point
+    string nounPl1 = "monkeys";          //Plural noun
     string noun2 = "tupperware";
     string adjective2 = "slippery";
     string color = "cyan";
