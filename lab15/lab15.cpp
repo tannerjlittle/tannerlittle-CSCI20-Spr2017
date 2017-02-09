@@ -1,5 +1,5 @@
 // Created By: Tanner Little
-// Created On: 2/7/2017
+// Created On: 2/9/2017
 // 1.5 Lab - Output a Mad Lib using assigned variables
 
 #include <iostream>
