@@ -32,19 +32,19 @@ int main()
     cout<<"Please enter your age: ";
     cin>>person1.age;
     cout<<endl;
-     int caloriesExpended = (person1.caloriesPerYear*person1.age);
-     int totalChicken = (person1.caloriesExpended/person1.caloriesChicken);
-    cout <<"The average person expends "<<person1.caloriesPerYear<<" calories per year."
+     int caloriesExpended = (caloriesPerYear*person1.age);
+     int totalChicken = (caloriesExpended/caloriesChicken);
+    cout <<"The average person expends "<<caloriesPerYear<<" calories per year."
          <<" Here is your calories expended (burned) ticket: "
          <<endl
          <<"Name: "<<person1.nameFirst<<" "<<person1.nameLast
          <<endl
          <<"Age: "<<person1.age
          <<endl
-         <<"Calories expended: "<<person1.caloriesExpended
+         <<"Calories expended: "<<caloriesExpended
          <<endl
-         <<"So, if a fried chicken wing has "<<person1.caloriesChicken<<" calories..."
-         <<" That's "<<person1.totalChicken<<" fried chicken wings! That's a lot of KFC."
+         <<"So, if a fried chicken wing has "<<caloriesChicken<<" calories..."
+         <<" That's "<<totalChicken<<" fried chicken wings! That's a lot of KFC."
          <<endl;
 
 }
