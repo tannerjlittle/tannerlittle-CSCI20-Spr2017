@@ -1,0 +1,31 @@
+Assignment 1.0 Pseudocode - Tanner Little
+//Create a struct called LifetimePerson
+//In that struct name the integer variables; age, caloriesPerYear, caloriesExpended, caloriesChicken, and totalChicken
+//In that struct name the string variables; nameFirst and nameLast
+//Start the main program
+//Name the object from the struct LifetimePerson, person1
+//Define variables for person1 as; age, nameFirst, nameLast, caloriesPerYear, and caloriesChicken
+//Set person1.age to 0
+//Set person1.nameFirst using open quotations
+//Set person1.nameLast using open quotations
+//Set person1.caloriesPerYear to 2000*365
+//Set person1.caloriesChicken to 96
+//Output: "Please enter your first name: "
+//Get input for person1.nameFirst
+//Output: "Please enter your last name: "
+//Get input for person1.nameLast
+//Output: "Please enter your age: "
+//Get input for person1.age
+//Set person1.caloriesExpended to (person1.caloriesPerYear*person1.age)
+//Set person1.totalChicken to (person1.caloriesExpended/person1.caloriesChicken)
+//Output: "The average person expends "person1.caloriesPerYear" calories per year"
+//      : "Here is your calories expended or burned ticket: "
+//      : "Name: "person1.nameFirst; person1.nameLast
+//New line
+//      : "Age: "person1.age
+//New line
+//      : "Calories expended: "person1.caloriesExpended
+//New line
+//      : "A fried chicked wing has "person1.caloriesChicken" calories."
+//      : "That means you have expended "person1.totalChicken" fried chicken wings in total."
+//End program
