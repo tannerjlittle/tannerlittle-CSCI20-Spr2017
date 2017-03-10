@@ -24,15 +24,15 @@ class TemperatureConverter {
         double kelvin_;
 };
 
-TemperatureConverter::TemperatureConverter() {
+TemperatureConverter::TemperatureConverter() {     //default constructor
     kelvin_=0.0;   
 }
 
-TemperatureConverter::TemperatureConverter(double kelvinTemp) {
+TemperatureConverter::TemperatureConverter(double kelvinTemp) {     //overloaded constructor
     kelvinTemp=kelvin_;
 }
 
-void TemperatureConverter::SetTempFromKelvin(double kelvinTemp) {
+void TemperatureConverter::SetTempFromKelvin(double kelvinTemp) {     //storing kelvin value
     kelvin_=kelvinTemp;
 }
 
@@ -40,7 +40,7 @@ double TemperatureConverter::GetTempFromKelvin() {
     return kelvin_;
 }
 
-void TemperatureConverter::SetTempFromCelsius(double celsiusTemp) {
+void TemperatureConverter::SetTempFromCelsius(double celsiusTemp) {     //taking kelvin value and converting to celsius
     kelvin_ = (celsiusTemp + 273.15);
 }
 
@@ -48,7 +48,7 @@ double TemperatureConverter::GetTempAsCelsius() {
     return kelvin_;
 }
 
-void TemperatureConverter::SetTempFromFahrenheit(double fahrenheitTemp) {
+void TemperatureConverter::SetTempFromFahrenheit(double fahrenheitTemp) {     //taking fahrenheit value and converting to fahrenheit
     kelvin_ = (5 * (fahrenheitTemp - 32) / 9) + 273.15;
 }
 
