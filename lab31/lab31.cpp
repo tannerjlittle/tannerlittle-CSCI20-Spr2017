@@ -14,9 +14,9 @@ int main () {
     int gbOfData = 0;
     int typeOfPhone = 0;
     int dumbOrTab = 0;
-    char addItem = "";
-    char addItem2 = "";
-    char discount = "";
+    char addItem = '-';
+    char addItem2 = '-';
+    char discount = '-';
     
     cout<<"Enter type of phone desired (1=smartphone, 2=dumbphone)."<<endl;
     cin>>typeOfPhone;
@@ -29,7 +29,7 @@ int main () {
             cin>>addItem;
             cout<<endl;
                 
-                if (addItem == y) {
+                if (addItem == 'y') {
                     cout<<"What item would you like to add? (1=dumbphone, 2=tablet)";
                     cin>>dumbOrTab;
                     cout<<endl;
@@ -42,7 +42,7 @@ int main () {
                             cin>>addItem2;
                             cout<<endl;
                             
-                                if (addItem2 == y) {
+                                if (addItem2 == 'y') {
                                     cout<<"Enter number of tablets desired: ";
                                     cin>>amtTablets;
                                     cout<<endl;
@@ -110,7 +110,7 @@ int main () {
                         <<"Now for data..."
                         <<endl;
                 }
-            cout<<"Enter amount of data desired: ";
+            cout<<"Enter amount of data desired (GB): ";
             cin>>gbOfData;
         }
         else {
@@ -126,16 +126,19 @@ int main () {
     cin>>discount;
     cout<<endl;
         
-        if (discount == c) {
+        if (discount == 'c') {
             cout<<"10% corporate discount added!"
+                <<endl
                 <<endl;
         }
-        else if (discount == f) {
+        else if (discount == 'f') {
             cout<<"Family discount added!"
+                <<endl
                 <<endl;
         }
         else {
             cout<<"No discount added."
+                <<endl
                 <<endl;
         }
     
@@ -153,11 +156,11 @@ int main () {
         <<gbOfData
         <<" GB of data"
         <<endl;
-    if (discount == f) {
+    if (discount == 'f') {
             cout<<"Family Discount"
                 <<endl;
         }
-        else if (discount == c) {
+        else if (discount == 'c') {
             cout<<"Corporate Discount"
                 <<endl;
         }
