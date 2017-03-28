@@ -16,6 +16,7 @@ int main () {
     double taxOwed = 0.0;
     double refundEntitled = 0.0;
     double taxOwedFinal = 0.0;
+    int switchCaseMarriage = 0;
     
     cout<<"Let's do some taxes"<<endl;
     
@@ -49,9 +50,18 @@ int main () {
         <<endl
         <<endl
         <<endl;
+        
+        if (maritalStatus == "single") {
+            switchCaseMarriage = 1;
+            
+        }
+        else {
+            switchCaseMarriage = 2;
+            
+        }
     
-        switch (maritalStatus) {
-            case 'single':
+        switch (switchCaseMarriage) {
+            case 1:
                 adjIncome = wages - 3900.0;
                 
                 if (adjIncome <= 0.0) {
