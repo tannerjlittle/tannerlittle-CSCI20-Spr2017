@@ -40,12 +40,11 @@ int main () {
         
     }
     
-    if (userNumber == computerNumber) {
         
-        for (userNumber = 0; userNumber = 5; ++userNumber) {
-            cout<<"Just right"
-                <<endl;
-        }
-        
+    for (userNumber == computerNumber; userNumber = 1; ++userNumber) {
+        cout<<"Just right"
+            <<endl;
     }
+    
+    return 0;
 }
