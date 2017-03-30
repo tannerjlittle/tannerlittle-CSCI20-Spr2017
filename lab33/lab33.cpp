@@ -40,7 +40,6 @@ int main () {
         
     }
     
-        
     for (userNumber == computerNumber; userNumber = 1; ++userNumber) {
         cout<<"Just right"
             <<endl;
