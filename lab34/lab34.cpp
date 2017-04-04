@@ -10,7 +10,7 @@ of the numbers entered (notincluding the terminated negative number!).
 ***************************************************/
 #include <iostream>
 using namespace std; 
-int main(){
+int main() {
     // initialization
     int num = 0;
     int sum = 0;
