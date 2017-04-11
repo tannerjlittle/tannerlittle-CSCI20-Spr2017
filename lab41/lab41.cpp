@@ -50,14 +50,14 @@ ArrayTools::ArrayTools(int minVal) {
 }
 
 int ArrayTools::Find_min(int minVal) {
-    if (minVal>a[i]) {
-        minVal=a[i];
+    if (minVal>myArray_[i]) {
+        minVal=myArray_[i];
     }
 }
 
 int ArrayTools::Find_max(int maxVal) {
-     if (minVal<a[i]) {
-        minVal=a[i];
+     if (minVal<myArray_[i]) {
+        minVal=myArray_[i];
     }
 }
 
@@ -67,6 +67,9 @@ int ArrayTools::Find_sum(int sum) {
 
 int ArrayTools::Search(int searchNumber) {
     if (myArray_[i]==searchNumber) {
+        break;
+    }
+    else {
         break;
     }
 }
