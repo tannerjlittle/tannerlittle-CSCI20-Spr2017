@@ -1,6 +1,6 @@
 // Created By: Tanner Little
 // Created On: 4/13/2017
-// Lab 4.23 - A shopping cart using arrays of objects
+// Lab 4.3 - A shopping cart using arrays of objects
 
 #include <iostream>
 #include <string>
