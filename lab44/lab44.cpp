@@ -12,7 +12,6 @@ int main() {
     
     char firstName[10];
     char lastName[20];
-    int i;
     
     do {
         
