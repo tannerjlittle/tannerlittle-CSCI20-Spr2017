@@ -13,7 +13,7 @@ int main() {
     char firstName[10];
     char lastName[20];
     
-    do {
+    LOOP: do {
         
         cout<<"Please enter your first name: ";
         cin>>firstName;
@@ -21,11 +21,13 @@ int main() {
         cin>>lastName;
         
         if (strlen(firstName) > 10) {
-            cout<<"Too long. Start over. Sorry.";
+            cout<<"Too long. Start over. Sorry. \n \n";
+            goto LOOP;
         }
             
         if (strlen(lastName) > 20) {
             cout<<"Too long. Start over. Sorry. \n \n";
+            goto LOOP;
         }
         
         cout<<"Username suggestions: \n \n"
