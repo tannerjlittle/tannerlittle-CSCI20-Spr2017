@@ -11,7 +11,7 @@ int main() {
     string firstName;
     string lastName;
     
-    LOOP: do {
+    do {
         
         cout<<"Please enter your first name: ";
         cin>>firstName;
@@ -20,12 +20,10 @@ int main() {
         
         if (firstName.size() > 10) {
             cout<<"Too long. Start over. Sorry. \n \n";
-            goto LOOP;
         }
             
         if (lastName.size() > 20) {
             cout<<"Too long. Start over. Sorry. \n \n";
-            goto LOOP;
         }
         
         cout<<"Username suggestions: \n \n"
@@ -38,12 +36,10 @@ int main() {
             <<firstName
             <<lastName
             <<endl;
-            
-            goto END;
     
     } while (firstName == lastName);
         cout<<"These names are the same. \n \n";
     
-    END: cout<<"--------------------------";
+    cout<<"--------------------------";
     
 }
