@@ -38,31 +38,31 @@ int main() {
 
      cout << endl;
 
-     tail = &name[strlen(name) - 1];
+     tail = &name[strlen(name) - 1];     //changes tail to the array at name with a size that is one less than the length of name
 
-     if (nameLength < 10)
+     if (nameLength < 10)     //Start of if loop to output different items after reading C-String while keeping the length under 10
      {
           while (tail != name)
           {
-                 cout << *tail;
+                 cout << *tail;     //While the location of tail is being read, output each char until reaching the null character
                  tail--;
           }
      }
      cout << endl;
 
-     head = name;
-     tail = &name[strlen(name) - 1];
+     head = name;     //assigning head to what is in name
+     tail = &name[strlen(name) - 1];     //changes tail to the array at name with a size that is one less than the length of name
 
-     head++;
-     tail--;
+     head++;     //iterating the size of head up by one
+     tail--;     //iterating the size of tail down by one
 
-     if (*head == *tail)
+     if (*head == *tail)     //When head and tail reach the same length from both ends
      {
-         cout << "It is an palindrome!" << endl;
+         cout << "It is an palindrome!" << endl;     //Output to user saying it is a palindrome
      }
      else
      {
-         cout << "It is not an palindrome" << endl;
+         cout << "It is not an palindrome" << endl;     //If they do not read the same from head and tail, output telling user that it is not a palindrome
      }
 
      return 0; 
