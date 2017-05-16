@@ -1,0 +1,32 @@
+/*  Created By: Tanner Little
+    Created On: 5/16/2017
+    Final Assignment Pseudocode  */
+
+// Create two .txt files with the names "people.txt" and "relation.txt"
+// In relation.txt, fill six lines with six letters each separated by a space
+    The letters represent the relation of each person
+    "N" for "no relation"
+    "B" for "brother"
+    "S" for "sister"
+    "P" for "parent"
+    "M" for "mother"
+    "F" for "father"
+    These will act as place holders for user input
+// In people.txt, fill six lines with a name, a birth year, and "Alive"
+    These will act as place holders for user input
+// Create two files, "functions.h" and "functions.cpp" to hold all our functions
+// Create the functions:
+    size: to see how many people have been documented
+    importToClass: to import all info to the class
+    finFin: to input all info into arrays
+    menu: to display user selection menu
+    add: to alow the user to add people to the tree
+    save: to output user input to the files
+    makeRelation: to allow the user to specify the relation of two people
+    relationTree: to output the family tree
+    oldest: to calculate the oldest person in family
+    nextGen: to output parents and children
+    loadRelation: to load the selected relations into the file
+    printRelation: to output all relations
+    getMatrix: to save all arrays with correct information
+    
