@@ -15,7 +15,7 @@
 // In people.txt, fill six lines with a name, a birth year, and "Alive"
     These will act as place holders for user input
 // Create two files, "functions.h" and "functions.cpp" to hold all our functions
-// Create the functions:
+// Declare the functions in functions.h:
     size: to see how many people have been documented
     importToClass: to import all info to the class
     finFin: to input all info into arrays
@@ -28,5 +28,117 @@
     nextGen: to output parents and children
     loadRelation: to load the selected relations into the file
     printRelation: to output all relations
-    getMatrix: to save all arrays with correct information
-    
+// Define the functions in functions.cpp:
+    size:
+        open each file using fstream. Scan the file using eof
+        determine the length of the file and output amount of people documented
+    importToClass:
+        using fstream, open the file and send the info to the class
+    finFin:
+        using fstream, open the file and record the variables for name and alive or dead
+        record the variables for the year they were born
+        put the data in respectable arrays
+    menu:
+        display all options for the user to access different parts of the program
+    add:
+        declare a temporary pointer and a heap of memory that will iterate up with each addition
+        declare new variables for each and add to the arrays
+        prompt user for input of name of person, year of birth, and alive or dead
+        based on each user input, set the files accordingly using a nullptr
+    save:
+        take info from add and iterate the arrays and files up to make room for new values
+        inform the user it has been saved
+    makeRelation:
+        asking the user to specify relation between two people in the file
+        iterate through each combonation of people and ask for relation
+        take the new relations and put them in the relations file
+    relationTree:
+        display oldest person first and output the next name in relation under them or next to them
+        keep displaying names for each person that is labeled M, F, or P
+        display remainder of names under
+    oldest:
+        iterate through the file and read each birth year
+        determine the age in years
+        store the oldest person's info in a variable
+    nextGen:
+        iterate through the file to determine all parents and children
+        output the names of parents
+    loadRelation:
+        declare a double(?) pointer that will access the relations
+        declare a new heap of memory for a pointer
+        iterate through the file and store the relations in the heap
+        iterate until the end of the file and store it in the file based on user input
+    printRelation:
+        iterate through the file and output all relations given
+// Create two files, "class.h" and "class.cpp" to hold all info for our class
+// Declare class and objects in class.h:
+    Class name: Person
+    public:
+        default constructor
+        overloaded constructor
+        setName
+        getName
+        setAge
+        getAge
+        setBirthYear
+        getBirthYear
+        setAlive
+        getAlive
+        display
+        display2
+    private:
+        string name
+        int age
+        int birthYear
+        string alive
+// Define the class and objects in class.cpp (use 'this' because of lots of pointers):
+    default constructor:
+        set name to "NULL"
+        set age to "0"
+        set birthYear to "0"
+        set alive to "NULL"
+    overloaded constructor:
+        this->name=name
+        this->age=age
+        this->birthYear=birthYear
+        this->alive=alive
+    setName:
+        this->name=name
+    getName:
+        return this->name
+    setAge:
+        this->age=2017-getBirthYear()
+    getAge:
+        return this->age
+    setBirthYear:
+        this->birthYear=birthYear
+    getBirthYear:
+        return this->birthYear
+    setAlive:
+        this->alive=alive
+    getAlive:
+        return this->alive
+    display:
+        Output name, age, alive for a person
+    display2:
+        Iterate through the file
+        Output name, age, alive for multiple people
+// Create two files, "main.h" and "main.cpp"
+// Declare all preprocessor directives in main.h
+// main.cpp:
+    declare variables "fileName" and "fileName2" for "people.txt" and "relation.txt"
+    declare a double(?) pointer variable for relation
+    make sure the files exist by reading the size of each
+    declare a pointer heap for "Person"
+    use finFin to read in the data from people.txt
+    display the current info in the files
+    display the menu of options for user
+    allow the user to select what to do using number based selection
+    if user inputs 1, call the add function
+    display new data
+    if user inputs 2, call the save function
+    if user inputs 3, set relation to the makeRelation function
+        iterate through the relations and output the data from relations.txt
+    if user inputs 4, call the relationTree function
+    if user inputs 5, set relation to the loadRelation function
+// Create makefile
